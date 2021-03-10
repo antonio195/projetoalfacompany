@@ -1,0 +1,97 @@
+.cabecalho { background-color: rgb(88, 177, 108);
+    width: auto;
+    height: 40px;
+
+}
+
+.login {
+    background-color: #ffffff;
+    float: right;
+    border-radius: 60px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border: #ffffff;
+    cursor: pointer;
+}
+
+.input_cinza1 {
+
+    background-color: rgb(241, 241, 241);
+    border-radius: 60px;
+    border: rgb(241, 241, 241);
+    float: right;
+    margin-right: 200px;
+    height: 25px;
+
+}
+
+.input_cinza2 {
+
+    
+    background-color: rgb(241, 241, 241);
+    border-radius: 60px;
+    border: rgb(241, 241, 241);
+    float: right;
+    margin-right: 30px;
+    height: 25px;
+
+}
+
+.input_cinza3 {
+
+    
+    background-color: rgb(241, 241, 241);
+    border-radius: 60px;
+    border: rgb(241, 241, 241);
+    float: right;
+    margin-right: 300px;
+    height: 25px;
+
+}
+
+.simular {
+    background-color: rgb(56, 197, 56) ;
+    border-radius: 30px;
+    border:  rgb(56, 197, 56);
+    float: right;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 360px;
+
+}
+
+.imagem_fund {
+
+    background-image: url("fundo.png");
+   background-repeat: no-repeat;
+  background-size: cover;
+   
+     
+}
+
+.titulo1 {
+
+color: white;
+font-family: Sitka Subheading;
+margin-left: 100px;
+
+}
+
+.titulo2 {
+
+    color: white;
+    font-family: Sitka Subheading;
+    margin-left: 50px;
+}
+
+.textos {
+
+    margin-top: 120px;
+    background-color: rgba(0, 0, 0, 0.37);
+    width: 500px;
+    margin-left: 10px;
+   padding-right: 20px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Financeiro</title>
+    <link rel="stylesheet" href="Design.css">
+</head>
+
+<body class="imagem_fund">
+
+    <div class="cabecalho"> <button class="login">Login cliente</button></div>
+
+
+
+
+    </div>
+    <img style="width: 300px; float: right; margin-right: 240px; " src="carlos  (1).png" alt="Logo Alfa Company">
+
+
+    <div class="textos">
+        <h1 class="titulo1">Simulador Financeiro</h1>
+
+        <h2 class="titulo2">Preencha os campos ao lado e
+            simule
+            <br> quanto ficaria nosso
+            serviço e quanto
+            <br>
+            de perda poderia
+            ser evitado com nosso
+            <br>
+            serviço!
+        </h2>
+
+    </div>
+
+<span style="color: white;"></span>
+
+
+    <input class="input_cinza1" type="text" id="nome_empresa" placeholder="Nome da empresa:">
+
+    <input class="input_cinza2" type="text" id="tamanho_horta" placeholder="Tamanho da horta (m²):">
+
+    <br>
+    <br>
+
+    <input class="input_cinza1" type="text" id="nome_proprietario" placeholder="Nome do proprietário:">
+
+    <input class="input_cinza2" type="text" id="lucro_anu_horta" placeholder="Lucro anual da horta:">
+
+    <br>
+    <br>
+    <input class="input_cinza3" type="text" id="perda_anu_horta" placeholder="Perda anual da horta:">
+    <br>
+    <br>
+    
+    <button class="simular" onclick="Simular()">Simular</button>
+    <br>
+    <br><br>
+    <div id="mensagem"></div>
+</body>
+
+</html>
+
+<script>
+
+    function Simular() {
+
+        var media = Number(tamanho_horta.value)/ 20
+        var trabalhador = Number((tamanho_horta.value/ 100) * 2100)
+        var total = Number(media * 11.10) + Number(media * 85.40) + Number(media * 26.90) + Number(media * 14.50) + trabalhador
+
+        mensagem.innerHTML = ` <span style="color: black; float: right;">O lucro atual de ${nome_empresa.value} é R$${lucro_anu_horta.value} e a perda de R$${perda_anu_horta.value}, porém com <br>nossos serviços ${nome_empresa.value} deixará de perder entre R$${Number(perda_anu_horta.value) * 0.65} e R$${Number(perda_anu_horta.value) * 0.95}.
+<br>
+<br>
+A empresa ${nome_empresa.value}-propriedade de ${nome_proprietario.value}-de ${tamanho_horta.value}m² pagaria R$${total} pelo nosso serviço.
+<br>
+<br>
+Além disso, caso deseje, oferecemos os seguintes itens para complementar seu sistema:
+<br>
+<br>
+Climatizador e Evaporizador
+<br>
+Ar Condicionado
+<br>
+Notebook
+<br>
+Aquecedor elétrico industrial
+<br>
+<br>
+Internet
+<br>
+<br>
+
+Obs: Os preços irão variar de acordo com a necessidade de cada clientes.</span>
+`
+    }
+
+</script>
